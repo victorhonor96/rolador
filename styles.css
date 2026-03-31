@@ -9,34 +9,44 @@ body {
 }
 
 .container {
+  padding: 20px;
+  max-width: 420px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #e0c27a;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+input, select {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid #6b4f2a;
+  background: #1c1207;
+  color: #f5e6c8;
+  font-size: 18px;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
   margin-top: 25px;
-  padding: 18px;
-  border-radius: 12px;
-  background: rgba(0,0,0,0.5);
-  border: 1px solid #8b6a2b;
   font-size: 20px;
-  min-height: 60px;
-}
-
-.rolling {
-  animation: shake 1s;
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  25% { transform: translate(-2px, 0px) rotate(-2deg); }
-  50% { transform: translate(2px, 1px) rotate(2deg); }
-  75% { transform: translate(-1px, -1px) rotate(-1deg); }
-  100% { transform: translate(1px, -2px) rotate(1deg); }
-}
-
-.critical {
-  color: gold;
   font-weight: bold;
-  text-shadow: 0 0 10px gold;
-}
-
-@media (max-width: 480px) {
-  h1 { font-size: 28px; }
-  input, select, button { font-size: 18px; }
+  border-radius: 12px;
+  background: linear-gradient(145deg, #8b6a2b, #c9a44c);
+  color: #1a1206;
+  cursor: pointer;
 }
