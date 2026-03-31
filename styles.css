@@ -1,0 +1,85 @@
+/* Mobile-first medieval theme */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Uncial+Antiqua&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background: radial-gradient(circle at top, #2b1d0e, #120a03);
+  color: #f5e6c8;
+}
+
+.container {
+  padding: 20px;
+  max-width: 420px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #e0c27a;
+  text-shadow: 2px 2px 4px #000;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #6b4f2a;
+  background: #1c1207;
+  color: #f5e6c8;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #8b6a2b, #c9a44c);
+  color: #1a1206;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+}
+
+.result {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.4);
+  border: 1px solid #8b6a2b;
+  font-size: 18px;
+}
+
+/* Tablet+ */
+@media (min-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .container {
+    margin-top: 40px;
+  }
+
+  button {
+    font-size: 20px;
+  }
+}
